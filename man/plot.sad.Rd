@@ -9,10 +9,13 @@
 \arguments{
 \item{x}{Vector with species abundances (integer vector)}
 
-\item{...}{Additional graphical parameters used in \code{\link[graphics]{plot}}
+\item{...}{Additional graphical parameters used in \code{\link[graphics:plot.default]{graphics::plot}}
 or \code{\link[graphics]{barplot}}}
 
 \item{method}{Plotting method, partial match to \code{"octave"} or \code{"rank"}}
+}
+\value{
+This function is called for its side effects and has no return value.
 }
 \description{
 Plot species abundance distributions

@@ -9,7 +9,7 @@ dist_decay(
   prop_area = 0.005,
   n_samples = 20,
   method = "bray",
-  binary = F
+  binary = FALSE
 )
 }
 \arguments{
@@ -25,8 +25,8 @@ dist_decay(
 See \code{\link[vegan]{vegdist}}}
 }
 \value{
-Dataframe with distances between subplot pairs and the respective
-similarity indices
+Object of class  \code{dist_decay}: a dataframe with distances between
+subplot pairs and the respective similarity indices.
 }
 \description{
 Estimate pairwise similarities of communities in subplots as

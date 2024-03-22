@@ -9,11 +9,14 @@
 \arguments{
 \item{x}{Community object}
 
-\item{...}{Other parameters to \link[graphics]{plot}}
+\item{...}{Other parameters to \code{\link[graphics:plot.default]{graphics::plot}}}
 
 \item{col}{Colour vector to mark species identities}
 
-\item{pch}{Plotting character to mark species identities}
+\item{pch}{Plotting character to mark species identities. pch 16 is advised for large datasets}
+}
+\value{
+This function is called for its side effects and has no return value.
 }
 \description{
 Plot positions and species identities of all individuals in a community object.

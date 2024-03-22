@@ -29,46 +29,49 @@ summary(abund3)
 abund1 <- c(20,10,10,5,5)
 comm1 <- sim_poisson_coords(abund_vec = abund1, xrange = c(0,1), yrange = c(0,1))
 
-## ---- fig.width = 3.5, fig.height = 4-----------------------------------------
+## ----fig.width = 3.5, fig.height = 4------------------------------------------
 class(comm1)
 summary(comm1)
 plot(comm1)
 
-## ---- fig.width = 3.5, fig.height = 4-----------------------------------------
+## ----fig.width = 3.5, fig.height = 4------------------------------------------
 comm2 <- sim_poisson_community(s_pool = 20, n_sim = 200,
                                sad_type = "lnorm",
                                sad_coef = list(cv_abund = 1))
 plot(comm2)
 
-## ---- fig.width = 3.5, fig.height = 4-----------------------------------------
+## ----fig.width = 3.5, fig.height = 4------------------------------------------
 comm3 <- sim_thomas_coords(abund_vec = abund1, sigma = 0.02)
 plot(comm3)
 
-## ---- fig.width = 7, fig.height = 4-------------------------------------------
+## ----fig.width = 7, fig.height = 4--------------------------------------------
 comm3a <- sim_thomas_coords(abund_vec = abund1, sigma = 0.05)
-par(mfrow = c(1,2))
+oldpar <- par(mfrow = c(1,2))
 plot(comm3)
 plot(comm3a)
+par(oldpar)
 
-## ---- fig.width = 7, fig.height = 4-------------------------------------------
+## ----fig.width = 7, fig.height = 4--------------------------------------------
 comm3b <- sim_thomas_coords(abund_vec = abund1, sigma = 0.02, mother_points = 1)
-par(mfrow = c(1,2))
+oldpar <- par(mfrow = c(1,2))
 plot(comm3)
 plot(comm3b)
+par(oldpar)
 
-## ---- fig.width = 7, fig.height = 4-------------------------------------------
+## ----fig.width = 7, fig.height = 4--------------------------------------------
 comm3c <- sim_thomas_coords(abund_vec = abund1, sigma = 0.02, cluster_points = 5)
-par(mfrow = c(1,2))
+oldpar <- par(mfrow = c(1,2))
 plot(comm3)
 plot(comm3c)
+par(oldpar)
 
-## ---- fig.width = 3.5, fig.height = 4-----------------------------------------
+## ----fig.width = 3.5, fig.height = 4------------------------------------------
 comm4 <- sim_thomas_coords(abund_vec = abund1, sigma = 0.02,
                            mother_points = c(5,4,3,2,1))
 plot(comm4)
 
-## ---- fig.width = 3.5, fig.height = 4-----------------------------------------
+## ----fig.width = 3.5, fig.height = 4------------------------------------------
 comm5 <- sim_thomas_community(s_pool = 100, n_sim = 500, sad_type = "lnorm",
-                              sad_coef = list(cv_abund = 1),sigma = 0.05)
+                              sad_coef = list(cv_abund = 1), sigma = 0.05)
 plot(comm5)
 

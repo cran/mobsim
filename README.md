@@ -1,7 +1,8 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
+<!-- badges: start -->
 
-[![CRAN\_Status\_Badge](http://www.r-pkg.org/badges/version/mobsim)](https://cran.r-project.org/package=mobsim)
+[![CRAN_Status_Badge](http://www.r-pkg.org/badges/version/mobsim)](https://cran.r-project.org/package=mobsim)
 [![](http://cranlogs.r-pkg.org/badges/grand-total/mobsim)](https://CRAN.R-project.org/package=mobsim)
 
 [![Licence](https://img.shields.io/badge/licence-GPL--3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0.en.html)
@@ -12,7 +13,8 @@ developed.](http://www.repostatus.org/badges/latest/active.svg)](https://www.rep
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.1170472.svg)](https://doi.org/10.5281/zenodo.1170472)
 
-[![R-CMD-check](https://github.com/MoBiodiv/mobsim/workflows/R-CMD-check/badge.svg)](https://github.com/MoBiodiv/mobsim/actions)
+[![R-CMD-check](https://github.com/MoBiodiv/mobsim/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/MoBiodiv/mobsim/actions/workflows/R-CMD-check.yaml)
+<!-- badges: end -->
 
 ## Overview
 
@@ -23,7 +25,7 @@ The package includes functions to simulate species distributions in
 space with controlled abundance distributions as well as controlled
 intraspecific aggregation. For analysis there are functions for species
 rarefaction and accumulation curves, species-area relationships,
-endemics-area relationships and th distance-decay of community
+endemics-area relationships and the distance-decay of community
 similarity.
 
 A detailed introduction of the package is available at
@@ -79,8 +81,6 @@ plot(comm_agg)
 
 ![](README-unnamed-chunk-5-1.png)<!-- -->
 
-<!--![](inst/image/README-unnamed-chunk-4-1.png)-->
-
 ### Analysis of spatially-explicit community data
 
 `mobsim` mobsim offer functions to analyse spatially-explicit community
@@ -102,8 +102,6 @@ legend("bottomright", c("Random","Aggregated"), col = 1:2, lwd = 2)
 
 ![](README-unnamed-chunk-7-1.png)<!-- -->
 
-<!-- ![](inst/image/README-unnamed-chunk-6-1.png) -->
-
 ### Sampling of communities
 
 Simulated or observed communities can be also sampled inorder to test
@@ -117,5 +115,3 @@ samples_agg <- sample_quadrats(comm_agg, avoid_overlap = TRUE)
 ```
 
 ![](README-unnamed-chunk-8-1.png)<!-- -->
-
-<!-- ![](inst/image/README-unnamed-chunk-7-1.png)-->
